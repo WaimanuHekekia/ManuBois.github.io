@@ -1,12 +1,12 @@
 /* ===================
    Color Scheme
    ===================
-   Primary: #2563eb (blue)
-   Primary hover: #1d4ed8 (darker blue)
+   Primary: #6A381F (brown)
+   Primary hover: #F7B538 (Yellow)
    Text: #1f2937 (dark gray)
-   Text muted: #6b7280 (lighter gray)
-   Background: #ffffff (white)
-   Border: #e5e7eb (light gray)
+   Text muted: #DB7C26 (Orange)
+   Background: #F4E9CD (bage)
+   Border: #C32F27 (Red)
 */
 
 /* ===================
@@ -22,7 +22,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #1f2937;
-  background-color: #ffffff;
+  background-color: #BC8A5F;
 }
 
 /* ===================
@@ -37,11 +37,12 @@ h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 
 a {
-  color: #2563eb;
+  color: #F7B538;
 }
 
 a:hover {
-  color: #1d4ed8;
+  color: #C32F27;
+    background-color: #F4E9CD;
   text-decoration: none;
 }
 
@@ -50,19 +51,30 @@ a:hover {
    =================== */
 header {
   padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
   border-bottom: 1px solid #e5e7eb;
+    background-color: #6A381F;
+    max-width: 1200px;
+  margin: 0 auto;
 }
 
 main {
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+    background-color: #F4E9CD;
 }
 
 footer {
   padding: 20px;
   border-top: 1px solid #e5e7eb;
+    background-color:#6A381F;
   text-align: center;
+    color:#F4E9CD;
+    max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ===================
@@ -70,6 +82,8 @@ footer {
    =================== */
 nav ul {
   list-style: none;
+    display: flex;
+    gap: 20px;
   padding: 0;
   margin: 0;
 }
@@ -91,3 +105,44 @@ nav a:hover {
    Components
    =================== */
 /* Add your specific component styles here */
+.featured {
+  padding: 40px 20px;
+}
+
+.featured h2 {
+  font-family: Georgia, serif;
+  color: #5D4037;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* You'll add Flexbox styles here in Week 11 */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 280px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+}
+
+.card h3 {
+  font-family: Georgia, serif;
+  color: #5D4037;
+  margin: 12px 0 8px;
+}
+
